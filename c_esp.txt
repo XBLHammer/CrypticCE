@@ -1,0 +1,9 @@
+Radar		Team ESP Color    ESP View
+Radar Distance  Team ESP Size     Health Bar
+Compass         Name		  Debug Info
+Compass Size    Distance          Target Details
+Compass Color   Weapon names      Reset Defaults
+External ESP    Weapon icon
+Enemy ESP Color Team Weapon Color
+Enemy ESP Size  Enemy Weapon Color
+

@@ -1,0 +1,81 @@
+0x8242FB90 - SV_GameSendServerCommand(int clientNum, svscmd_type type, const char *text) // ---------- /* 8242FB90 TU18 / 0x8242F958 TU13*/
+0x82438188 - SV_SendClientSnapshot(client_s *client) // ------------- /* 82438188 TU18 / 82437F70 TU13 */
+0x82432A10 - SV_SetConfigstring(int index, const char *val) // ------------  /* 82432A10 TU18 / 824327F8 TU13 */
+0x824317F0 - SV_GetConfigstringConst(int index) // ------------- /* 824317F0 TU18 / 824315D8 TU18 */ 
+0x8242F2A8 - SV_AddTestClient() // ------------- /* 8242F2A8 TU18 / 8242F090 TU13 */
+0x8242FE70 - SV_SetBrushModel(gentity_s *ent) // ----------------- /* 8242FE70 TU18 / 8242FC58 TU13 */
+0x8242FB00 - SV_SvEntityForGentity(gentity_s *gEnt) // ---------- /* 8242FB00 TU18 / 8242F8E8 TU13 */
+0x8236C350 - GScr_AddTestClient() // --------- /* 8236C350 TU18 / 8236C478 TU13 */
+0x824015E0 - Cbuf_AddText(int localClientNum, const char *text) // ------ /*  824015E0 TU18 / 82401540 TU13*/
+0x8237A888 - SP_script_brushmodel(gentity_s *self)
+0x8237A968 - SP_script_model(gentity_s *pSelf) 
+0x8237AA80 - SP_script_origin(gentity_s *pSelf)
+0x823BC510 - SP_turret(gentity_s *self)
+0x8237CF58 - SP_worldspawn(void)
+0x8243DA58 - SV_LinkEntity(gentity_s *gEnt)
+0x823BBCC8 - G_SpawnTurret(gentity_s *self, const char *weaponinfoname)
+0x82389F40 - G_Spawn()
+0x8232F290 - G_SpawnItem(gentity_s *ent, gitem_s *item)
+0x8237D790 - G_CallSpawn()
+0x8237C460 - G_CallSpawnEntity(gentity_s *ent)
+0x8237DF10 - G_SpawnEntitiesFromString(void)
+0x823896A8 - G_SetModel(gentity_s *ent, const char *modelName)
+0x8237C6F8 - GScr_AddFieldsForRadiant(void)
+0x8230C7A8 - G_AddPlayerMantleBlockage(float *endPos, int duration, pmove_t *pm)
+0x8238A3D0 - G_SetOrigin(gentity_s *ent, const float *origin)
+0x8238A428 - G_SetAngle(gentity_s *ent, const float *angle)
+0x8248A298 - vectoangles(const float *vec, float *angles)
+0x8238AE28 - G_EntAttach(gentity_s *ent, const char *modelName, unsigned int tagName, int ignoreCollision)
+0x8238AED0 - G_EntDetach(gentity_s *ent, const char *modelName, unsigned int tagName)
+0x82388DC8 - G_ModelIndex(const char *name)
+0x823531F8 - GetPlayerEntity(scr_entref_t entref)
+0x8236A068 - Scr_SetFog(const char *cmd, float start, float density, float r, float g, float b, float time)
+0x823233D8 - G_SetFog(const char *fogstring)
+0x8232F0B8 - G_RegisterWeapon(unsigned int weapIndex)
+0x823AB728 - G_GetWeaponIndexForName(const char *name)
+0x823AB750 - CG_GetWeaponIndexForName(const char *name)
+0x826BF110 - BG_GetWeaponIndexForName(const char *name, void (__cdecl *regWeap)(unsigned int))
+0x826BEC58 - BG_FindWeaponIndexForName(const char *name)
+0x8224ECE8 - CG_EjectWeaponBrass(int localClientNum, entityState_s *ent, int event)
+0x826B9A80 - BG_WeaponFireRecoil(playerState_s *ps, float *vGunSpeed, float *kickAVel)
+0x826BE500 - BG_GetWeaponDef(unsigned int weaponIndex)
+0x8231EF70 - PlayerCmd_SetPerk(scr_entref_t entref)
+0x8231F228 - PlayerCmd_UnsetPerk(scr_entref_t entref)
+0x82312220 - G_InitializeAmmo(gentity_s *pSelf, int weaponIndex, char weaponModel, int hadWeapon)
+0x826BE4D8 - BG_GetNumWeapons()
+0x823AAB78 - FireWeapon(gentity_s *ent, int gametime)
+0x823630B0 - SetObjectiveIcon(objective_t *obj, int paramNum)
+0x82388978 - G_FindConfigstringIndex(const char *name, int start, int max, int create, const char *errormsg)
+0x823ACA10 - G_GivePlayerWeapon(playerState_s *pPS, int iWeaponIndex, char altModelIndex)
+0x826B2E98 - BG_TakePlayerWeapon(playerState_s *ps, unsigned int weaponIndex, int takeAwayAmmo)
+0x828B8BA0 - R_AddCmdDrawText(const char *text, int maxChars, Font_s *font, float x, float y, float xScale, float yScale, float rotation, const float *color, int style) // --------- /* 828B8BA0 TU18 / 828B6900 TU13 */
+0x822754F0 - Cl_DrawText(ScreenPlacement *scrPlace, const char *text, int maxChars, Font_s *font, float x, float y, int horzAlign, int vertAlign, float xScale, float yScale, const float *color, int style)
+0x828B6EC0 - R_RegisterFont(const char *name, int imageTrack) // ------ /* 828B6EC0 TU18 / 828B4C28 TU13 */
+0x826B2CB8 - BG_GetViewmodelWeaponIndex(playerState_s *ps)
+0x821EA910 - CG_Init(int localClientNum, int serverMessageNum, int serverCommandSequence, int clientNum)
+0x822744E0 - CL_InitRenderer(void)
+0x828B78F0 - Material_RegisterHandle(const char *name, int imageTrack) // ------ /* 0x828B78F0 TU18 / 828B5658 TU13 */
+0x82276378 - CL_DownloadsComplete(int localClientNum)
+0x82262EA0 - CL_StartLoading(const char *mapname, const char *gametype)
+0x822664A8 - Con_InitClientAssets(void)
+0x82266290 - Con_CheckResize(void)
+0x82490390 - R_TextHeight(Font_s *font) // -------- /* 82490390 TU18 / 82490128 TU13 */
+0x828B6FD8 - R_TextWidth(Font_s *font) // -------- /* 828B6FD8 TU18 / 828B4D40 TU13 */
+0x821B6D58 - CG_CompassDrawPlayerNorthCoord(int localClientNum, CompassType compassType, rectDef_s *parentRect, rectDef_s *rect, Font_s *font, Material *material, float *color, int textStyle)
+0x821B7050 - CG_CompassDrawPlayerEastCoord(int localClientNum, CompassType compassType, rectDef_s *parentRect, rectDef_s *rect, Font_s *font, Material *material, float *color, int textStyle)
+0x82275578 - CL_DrawTextRotate(ScreenPlacement *scrPlace, const char *text, int maxChars, Font_s *font, float x, float y, float rotation, int horzAlign, int vertAlign, float xScale, float yScale, const float *color, int style)
+0x823893E0 - G_TagIndex(const char *name)
+0x82389480 - G_EffectIndex(const char *name)
+0x821D26A8 - CG_Obituary(int localClientNum, entityState_s *ent)
+0x8224A110 - CG_RegisterWeapon(int localClientNum, int weaponNum)
+0x82254110 - CG_GetPlayerViewOrigin(int localClientNum, playerState_s *ps, float *origin)
+0x82311C58 - G_GetPlayerViewOrigin(playerState_s *ps, float *origin)
+0x828AD6E0 - R_RenderScene(refdef_s *refdef)
+0x82262610 - CL_RenderScene(refdef_s *fd)
+0x82388F10 - G_ModelName(int index)
+0x8230CC70 - G_UpdateClientInfo(gentity_s *ent)
+0x8235DA28 - GScr_Spawn()
+
+0x8354AE90 - PlayerState_s (lenght 0x57F8)
+0x833C64C0 - Gentity_s (lenght 0x31C)
+0x84341D40 - Entry Stats
